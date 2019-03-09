@@ -5,7 +5,7 @@ const readBooks = () => {
   const [ books, setBooks ] = useState([])
 
   const getBooks = () => {
-    axios.get(`http://localhost:4741/books`)
+    axios.get(`https://powerful-earth-75266.herokuapp.com/books`)
     .then(res => {
       // setBooks(res.data.books)
       console.log(res.data)
