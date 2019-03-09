@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
+import { apiUrl } from "../../config"
 
 const readBooks = () => {
   const [ books, setBooks ] = useState([])
 
   const getBooks = () => {
-    axios.get(`https://powerful-earth-75266.herokuapp.com/books`)
+    axios.get(`${apiUrl}/books`)
     .then(res => {
-      // setBooks(res.data.books)
-      console.log(res.data)
+      setBooks(res.data.books)
     })
   }
 
   return (
     <div>
       <button onClick={getBooks}>read all</button>
-      {/* <ul style={{display: 'inline'}}>
-        {books.map(book => <li>{book.title}</li>)}
-      </ul> */}
+      <ul style={{display: 'inline'}}>
+        {books.map((book, i) => <li key={Object.toString(book)+i}>{book.title}</li>)}
+      </ul>
     </div>
   )
 }

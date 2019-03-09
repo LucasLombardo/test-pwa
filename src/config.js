@@ -1,0 +1,1 @@
+export const apiUrl = `https://cors-anywhere.herokuapp.com/https://powerful-earth-75266.herokuapp.com`
