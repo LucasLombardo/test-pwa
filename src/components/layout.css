@@ -620,3 +620,11 @@ pre tt:after {
     font-size: 100%;
   }
 }
+button {
+  width: 100px;
+  margin: 0.5em;
+}
+input {
+  width: 140px;
+  margin-right: 0.5em;
+}

@@ -10,8 +10,8 @@ const SecondPage = () => (
   <Layout>
     <h1>Authentication</h1>
     <SignIn />
-    <SignOut />
     <SignUp />
+    <SignOut />
     <Link to="/">Back to CRUD</Link>
   </Layout>
 )
