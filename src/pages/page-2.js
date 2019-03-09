@@ -1,16 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Api from "../components/api2"
+
+import SignIn from "../components/users/signIn"
+import SignOut from "../components/users/signOut"
+import SignUp from "../components/users/signUp"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <Api />
-    <Link to="/">Go back to the homepage</Link>
+    <h1>Authentication</h1>
+    <SignIn />
+    <SignOut />
+    <SignUp />
+    <Link to="/">Back to CRUD</Link>
   </Layout>
 )
 

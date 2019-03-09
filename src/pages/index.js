@@ -1,15 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import CatsOne from "../components/catsone"
+
+import CreateBook from "../components/books/createBook"
+import ReadBook from "../components/books/readBook"
+import ReadBooks from "../components/books/readBooks"
+import UpdateBook from "../components/books/updateBook"
+import DestroyBook from "../components/books/destroyBook"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Test web app</h1>
-    <CatsOne />
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1>Oh Crud</h1>
+    <CreateBook />
+    <ReadBook />
+    <ReadBooks />
+    <UpdateBook />
+    <DestroyBook />
+    <Link to="/page-2/">Go to Authentication</Link>
   </Layout>
 )
 
