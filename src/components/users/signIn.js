@@ -18,8 +18,8 @@ const signIn = () => {
     .then(res => {
       console.log(res);
       console.log(res.data);
-      window.localStorage.setItem('userData', res.data.user);
-      // access with window.localStorage.getItem('userData');
+      window.localStorage.setItem('userToken', res.data.user.token);
+      // access with window.localStorage.getItem('userToken');
     })
   }
   
